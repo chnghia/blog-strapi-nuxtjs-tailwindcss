@@ -1,0 +1,2 @@
+# blog-strapi-nuxtjs-tailwindcss
+
