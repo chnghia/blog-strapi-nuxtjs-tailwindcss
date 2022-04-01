@@ -32,7 +32,9 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // https://strapi.nuxtjs.org/
+    '@nuxtjs/strapi'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -50,7 +52,14 @@ export default {
   },
 
   env: {
-    strapiBaseUri: process.env.API_URL || 'http://localhost:1337'
+    strapiBaseUri: process.env.STRAPI_URL || 'http://localhost:1337'
+  },
+
+  strapi: {
+    url: process.env.STRAPI_URL || 'http://localhost:1337',
+    prefix: '/api',
+    version: 'v4',
+    cookie: {}
   },
 
   apollo: {
