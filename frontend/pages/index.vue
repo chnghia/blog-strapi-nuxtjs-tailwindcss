@@ -1,0 +1,183 @@
+<template>
+  <!-- Blog List Section: Full Width -->
+  <div class="bg-gray-100">
+    <div
+      class="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32"
+    >
+      <!-- Heading -->
+      <div class="text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
+          Latest Posts
+        </h2>
+        <h3
+          class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600 lg:w-2/3 mx-auto"
+        >
+          Be sure to
+          <a
+            href="javascript:void(0)"
+            class="text-indigo-600 hover:text-indigo-400"
+          >follow us on Twitter</a>
+          or
+          <a
+            href="javascript:void(0)"
+            class="text-indigo-600 hover:text-indigo-400"
+          >join us</a>
+          to stay up to date about any new posts.
+        </h3>
+      </div>
+      <!-- END Heading -->
+
+      <!-- Blog Posts -->
+      <Articles :articles="articles" />
+      <!-- <div class="space-y-4 sm:space-y-10">
+        <div
+          class="flex flex-col lg:flex-row items-center bg-white rounded-lg overflow-hidden shadow-sm"
+        >
+          <div class="lg:w-2/5">
+            <a
+              href="javascript:void(0)"
+              class="block relative group rounded lg:rounded-none overflow-hidden"
+            >
+              <img
+                src="https://source.unsplash.com/phIFdC6lA4E/800x600"
+                alt="Featured Image of blog post"
+              >
+              <div
+                class="flex items-center justify-center absolute inset-0 bg-indigo-700 bg-opacity-75 opacity-0 transition ease-out duration-150 group-hover:opacity-100"
+              >
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="text-white transform -rotate-45 hi-solid hi-arrow-right inline-block w-10 h-10"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="w-full lg:w-3/5 p-6 lg:py-8 lg:px-10">
+            <div class="mb-3">
+              <div
+                class="font-semibold inline-flex px-2 py-1 leading-4 text-sm rounded-full text-indigo-700 bg-indigo-200"
+              >
+                travel
+              </div>
+              <div
+                class="font-semibold inline-flex px-2 py-1 leading-4 text-sm rounded-full text-indigo-700 bg-indigo-200"
+              >
+                astronomy
+              </div>
+            </div>
+            <h4 class="font-bold text-lg sm:text-xl mb-2">
+              <a
+                href="javascript:void(0)"
+                class="leading-7 text-gray-800 hover:text-gray-600"
+              >The 20 best places in the world for star gazing</a>
+            </h4>
+            <p class="text-gray-600 text-sm mb-3">
+              <a
+                href="javascript:void(0)"
+                class="font-medium text-indigo-600 hover:text-indigo-400"
+              >Lia Baker</a>
+              on <span class="font-medium">February 23, 2021</span> · 20 min
+              read
+            </p>
+            <p class="prose prose-indigo">
+              Integer fermentum tincidunt auctor. Vestibulum ullamcorper, odio
+              sed rhoncus imperdiet, enim elit sollicitudin orci, eget dictum
+              leo mi nec lectus.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row items-center bg-white rounded-lg overflow-hidden shadow-sm"
+        >
+          <div class="lg:w-2/5">
+            <a
+              href="javascript:void(0)"
+              class="block relative group rounded lg:rounded-none overflow-hidden"
+            >
+              <img
+                src="https://source.unsplash.com/T7K4aEPoGGk/800x600"
+                alt="Featured Image of blog post"
+              >
+              <div
+                class="flex items-center justify-center absolute inset-0 bg-indigo-700 bg-opacity-75 opacity-0 transition ease-out duration-150 group-hover:opacity-100"
+              >
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="text-white transform -rotate-45 hi-solid hi-arrow-right inline-block w-10 h-10"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="w-full lg:w-3/5 p-6 lg:py-8 lg:px-10">
+            <div class="mb-3">
+              <div
+                class="font-semibold inline-flex px-2 py-1 leading-4 text-sm rounded-full text-indigo-700 bg-indigo-200"
+              >
+                travel
+              </div>
+              <div
+                class="font-semibold inline-flex px-2 py-1 leading-4 text-sm rounded-full text-indigo-700 bg-indigo-200"
+              >
+                adventure
+              </div>
+            </div>
+            <h4 class="font-bold text-lg sm:text-xl mb-2">
+              <a
+                href="javascript:void(0)"
+                class="leading-7 text-gray-800 hover:text-gray-600"
+              >How to explore one of the most beautiful lakes in the whole
+                world</a>
+            </h4>
+            <p class="text-gray-600 text-sm mb-3">
+              <a
+                href="javascript:void(0)"
+                class="font-medium text-indigo-600 hover:text-indigo-400"
+              >Mark Jones</a>
+              on <span class="font-medium">February 15, 2021</span> · 5 min read
+            </p>
+            <p class="prose prose-indigo">
+              Integer fermentum tincidunt auctor. Vestibulum ullamcorper, odio
+              sed rhoncus imperdiet, enim elit sollicitudin orci, eget dictum
+              leo mi nec lectus.
+            </p>
+          </div>
+        </div>
+      </div> -->
+      <!-- END Blog Posts -->
+    </div>
+  </div>
+  <!-- END Blog List Section: Full Width -->
+</template>
+
+<script>
+import allCategories from '~/apollo/queries/allCategories'
+import allArticles from '~/apollo/queries/allArticles'
+export default {
+  apollo: {
+    categories: {
+      prefetch: true,
+      query: allCategories
+    },
+    articles: {
+      prefetch: true,
+      query: allArticles
+    }
+  }
+}
+</script>

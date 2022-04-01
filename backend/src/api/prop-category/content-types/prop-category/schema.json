@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prop_categories",
+  "info": {
+    "singularName": "prop-category",
+    "pluralName": "prop-categories",
+    "displayName": "PropCategory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

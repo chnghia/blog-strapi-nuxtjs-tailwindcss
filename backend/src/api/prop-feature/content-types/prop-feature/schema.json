@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prop_features",
+  "info": {
+    "singularName": "prop-feature",
+    "pluralName": "prop-features",
+    "displayName": "PropFeature"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
