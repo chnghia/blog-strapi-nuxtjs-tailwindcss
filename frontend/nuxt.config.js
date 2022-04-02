@@ -34,7 +34,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     // https://strapi.nuxtjs.org/
-    '@nuxtjs/strapi'
+    // '@nuxtjs/strapi'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -55,12 +55,12 @@ export default {
     strapiBaseUri: process.env.STRAPI_URL || 'http://localhost:1337'
   },
 
-  strapi: {
-    url: process.env.STRAPI_URL || 'http://localhost:1337',
-    prefix: '/api',
-    version: 'v4',
-    cookie: {}
-  },
+  // strapi: {
+  //   url: process.env.STRAPI_URL || 'http://localhost:1337',
+  //   prefix: '/api',
+  //   version: 'v4',
+  //   cookie: {}
+  // },
 
   apollo: {
     clientConfigs: {
