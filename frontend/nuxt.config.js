@@ -1,4 +1,5 @@
 export default {
+  ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'frontend',
@@ -41,7 +42,10 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/apollo'
+    // https://github.com/nuxt-community/apollo-module
+    '@nuxtjs/apollo',
+    // https://auth.nuxtjs.org/
+    '@nuxtjs/auth-next'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -61,6 +65,20 @@ export default {
   //   version: 'v4',
   //   cookie: {}
   // },
+
+  auth: {
+    strategies: {
+      graphql: {
+        scheme: '~/schemes/graphqlScheme.js'
+      }
+    },
+    redirect: {
+      login: '/signin',
+      logout: '/signin?logout=true',
+      callback: false,
+      home: '/dashboard',
+    },
+  },
 
   apollo: {
     clientConfigs: {
