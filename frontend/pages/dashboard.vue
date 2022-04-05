@@ -1,16 +1,20 @@
 <template>
-  <!-- Page Container -->
-  <!--
+  <div
+    id="page-container"
+    class="flex flex-col mx-auto w-full min-h-screen bg-gray-100"
+  >
+    <!-- Page Container -->
+    <!--
   Sidebar on Desktop
     Closed '' (no class)
     Opened 'lg:pl-64'
 -->
-  <div
-    id="page-container"
-    class="flex flex-col mx-auto w-full min-h-screen bg-gray-100 lg:pl-64"
-  >
-    <!-- Page Sidebar -->
-    <!--
+    <div
+      id="page-container"
+      class="flex flex-col mx-auto w-full min-h-screen bg-gray-100 lg:pl-64"
+    >
+      <!-- Page Sidebar -->
+      <!--
     Sidebar on Mobile
       Closed '-translate-x-full'
       Opened 'translate-x-0'
@@ -19,7 +23,7 @@
       Closed 'lg:-translate-x-full'
       Opened 'lg:translate-x-0'
   -->
-    <!-- <nav
+      <!-- <nav
       id="page-sidebar"
       class="flex flex-col fixed top-0 left-0 bottom-0 w-full lg:w-64 h-full bg-white border-r border-gray-200 z-50 transform transition-transform duration-500 ease-out -translate-x-full lg:translate-x-0"
       aria-label="Main Sidebar Navigation"
@@ -28,8 +32,8 @@
       <!-- <div
         class="h-16 flex-none flex items-center justify-between lg:justify-center px-4 w-full"
       > -->
-        <!-- Brand -->
-        <!-- <a
+      <!-- Brand -->
+      <!-- <a
           href="javascript:void(0)"
           class="inline-flex items-center space-x-2 font-bold text-lg tracking-wide text-gray-600 hover:text-gray-500"
         >
@@ -47,10 +51,10 @@
           </svg>
           <span>Company</span>
         </a> -->
-        <!-- END Brand -->
+      <!-- END Brand -->
 
-        <!-- Close Sidebar on Mobile -->
-        <!-- <div class="lg:hidden">
+      <!-- Close Sidebar on Mobile -->
+      <!-- <div class="lg:hidden">
           <button
             type="button"
             class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-5 text-sm rounded border-transparent text-red-600 hover:text-red-400 focus:ring focus:ring-red-500 focus:ring-opacity-50 active:text-red-600"
@@ -69,7 +73,7 @@
             </svg>
           </button>
         </div> -->
-        <!-- END Close Sidebar on Mobile -->
+      <!-- END Close Sidebar on Mobile -->
       <!-- </div> -->
       <!-- END Sidebar Header -->
 
@@ -285,19 +289,19 @@
         </div>
       </div> -->
       <!-- END Sidebar Navigation -->
-    <!-- </nav> -->
-    <!-- Page Sidebar -->
+      <!-- </nav> -->
+      <!-- Page Sidebar -->
 
-    <!-- Page Header -->
-    <!-- <header
+      <!-- Page Header -->
+      <!-- <header
       id="page-header"
       class="flex flex-none items-center h-16 bg-white shadow-sm fixed top-0 right-0 left-0 z-30 lg:pl-64"
     >
       <div class="flex justify-between max-w-10xl mx-auto px-4 lg:px-8 w-full"> -->
-        <!-- Left Section -->
-        <!-- <div class="flex items-center space-x-2"> -->
-          <!-- Toggle Sidebar on Desktop -->
-          <!-- <div class="hidden lg:block">
+      <!-- Left Section -->
+      <!-- <div class="flex items-center space-x-2"> -->
+      <!-- Toggle Sidebar on Desktop -->
+      <!-- <div class="hidden lg:block">
             <button
               type="button"
               class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-6 rounded border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300 hover:shadow focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-white active:border-white active:shadow-none"
@@ -316,10 +320,10 @@
               </svg>
             </button>
           </div> -->
-          <!-- END Toggle Sidebar on Desktop -->
+      <!-- END Toggle Sidebar on Desktop -->
 
-          <!-- Toggle Sidebar on Mobile -->
-          <!-- <div class="lg:hidden">
+      <!-- Toggle Sidebar on Mobile -->
+      <!-- <div class="lg:hidden">
             <button
               type="button"
               class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-6 rounded border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300 hover:shadow focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-white active:border-white active:shadow-none"
@@ -338,10 +342,10 @@
               </svg>
             </button>
           </div> -->
-          <!-- END Toggle Sidebar on Mobile -->
+      <!-- END Toggle Sidebar on Mobile -->
 
-          <!-- Search -->
-          <!-- <div class="hidden sm:block">
+      <!-- Search -->
+      <!-- <div class="hidden sm:block">
             <form onsubmit="return false;">
               <input
                 id="tk-form-layouts-search"
@@ -370,14 +374,14 @@
               </svg>
             </button>
           </div> -->
-          <!-- END Search -->
-        <!-- </div> -->
-        <!-- END Left Section -->
+      <!-- END Search -->
+      <!-- </div> -->
+      <!-- END Left Section -->
 
-        <!-- Right Section -->
-        <!-- <div class="flex items-center space-x-2"> -->
-          <!-- Notifications -->
-          <!-- <button
+      <!-- Right Section -->
+      <!-- <div class="flex items-center space-x-2"> -->
+      <!-- Notifications -->
+      <!-- <button
             type="button"
             class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-5 text-sm rounded border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300 hover:shadow focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-white active:border-white active:shadow-none"
           >
@@ -397,12 +401,12 @@
             </svg>
             <span class="text-indigo-500">•</span>
           </button> -->
-          <!-- END Notifications -->
+      <!-- END Notifications -->
 
-          <!-- User Dropdown -->
-          <!-- <div class="relative inline-block"> -->
-            <!-- Dropdown Toggle Button -->
-            <!-- <button
+      <!-- User Dropdown -->
+      <!-- <div class="relative inline-block"> -->
+      <!-- Dropdown Toggle Button -->
+      <!-- <button
               id="tk-dropdown-layouts-user"
               type="button"
               class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-5 text-sm rounded border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300 hover:shadow focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-white active:border-white active:shadow-none"
@@ -423,10 +427,10 @@
                 />
               </svg>
             </button> -->
-            <!-- END Dropdown Toggle Button -->
+      <!-- END Dropdown Toggle Button -->
 
-            <!-- Dropdown -->
-            <!--
+      <!-- Dropdown -->
+      <!--
             Visibility
               Closed        'hidden'
               Opened        '' (no class)
@@ -439,7 +443,7 @@
               leave-start   'transform opacity-100 scale-100'
               leave-end     'transform opacity-0 scale-75'
           -->
-            <!-- <div
+      <!-- <div
               role="menu"
               aria-labelledby="tk-dropdown-layouts-user"
               class="absolute right-0 origin-top-right mt-2 w-48 shadow-xl rounded z-1"
@@ -533,22 +537,22 @@
                 </div>
               </div>
             </div> -->
-            <!-- END Dropdown -->
-          <!-- </div> -->
-          <!-- END User Dropdown -->
-        <!-- </div> -->
-        <!-- END Right Section -->
+      <!-- END Dropdown -->
       <!-- </div> -->
-    <!-- </header> -->
-    <!-- END Page Header -->
+      <!-- END User Dropdown -->
+      <!-- </div> -->
+      <!-- END Right Section -->
+      <!-- </div> -->
+      <!-- </header> -->
+      <!-- END Page Header -->
 
-    <!-- Page Content -->
-    <main
-      id="page-content"
-      class="flex flex-auto flex-col lg:flex-row max-w-full pt-16"
-    >
-      <!-- Toggle Side Content -->
-      <!-- <div class="lg:hidden w-full p-4 lg:p-8 bg-gray-50">
+      <!-- Page Content -->
+      <main
+        id="page-content"
+        class="flex flex-auto flex-col lg:flex-row max-w-full pt-16"
+      >
+        <!-- Toggle Side Content -->
+        <!-- <div class="lg:hidden w-full p-4 lg:p-8 bg-gray-50">
         <button
           type="button"
           class="w-full inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-5 text-sm rounded border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300 hover:shadow focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-white active:border-white active:shadow-none"
@@ -556,53 +560,55 @@
           Toggle Side Content
         </button>
       </div> -->
-      <!-- END Toggle Side Content -->
+        <!-- END Toggle Side Content -->
 
-      <!-- Side Content -->
-      <!--
+        <!-- Side Content -->
+        <!--
       Side Content on Mobile
         Closed 'hidden'
         Opened '' (no class)
     -->
-      <div
-        class="flex-none lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50"
-      >
-        <!-- Placeholder -->
         <div
-          class="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64"
+          class="flex-none lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50"
         >
-          Side Content
+          <!-- Placeholder -->
+          <div
+            class="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64"
+          >
+            Side Content
+          </div>
         </div>
-      </div>
-      <!-- END Side Content -->
+        <!-- END Side Content -->
 
-      <!-- Main Content -->
-      <div class="flex-grow flex flex-col max-w-10xl mx-auto p-4 lg:p-8 w-full">
-        <!--
+        <!-- Main Content -->
+        <div
+          class="flex-grow flex flex-col max-w-10xl mx-auto p-4 lg:p-8 w-full"
+        >
+          <!--
 
       ADD YOUR MAIN CONTENT BELOW
 
       -->
 
-        <!-- Placeholder -->
-        <div
-          class="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64"
-        >
-          Main Content
-        </div>
+          <!-- Placeholder -->
+          <div
+            class="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64"
+          >
+            Main Content
+          </div>
 
-        <!--
+          <!--
 
       ADD YOUR MAIN CONTENT ABOVE
 
       -->
-      </div>
-      <!-- END Main Content -->
-    </main>
-    <!-- END Page Content -->
+        </div>
+        <!-- END Main Content -->
+      </main>
+      <!-- END Page Content -->
 
-    <!-- Page Footer -->
-    <!-- <footer id="page-footer" class="flex flex-none items-center bg-white">
+      <!-- Page Footer -->
+      <!-- <footer id="page-footer" class="flex flex-none items-center bg-white">
       <div
         class="text-center flex flex-col md:text-left md:flex-row md:justify-between text-sm max-w-10xl mx-auto px-4 lg:px-8 w-full"
       >
@@ -637,9 +643,10 @@
         </div>
       </div>
     </footer> -->
-    <!-- END Page Footer -->
+      <!-- END Page Footer -->
+    </div>
+    <!-- END Page Container -->
   </div>
-  <!-- END Page Container -->
 </template>
 <script>
 export default {}
