@@ -329,7 +329,7 @@ export default {
       isHidden: true
     }
   },
-  created () {
+  mounted () {
     // eslint-disable-next-line nuxt/no-globals-in-created
     window.addEventListener('click', this.checkClickOn)
   },
