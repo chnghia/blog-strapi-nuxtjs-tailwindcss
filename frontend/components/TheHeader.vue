@@ -1,6 +1,10 @@
 <template>
   <!-- Header -->
-  <header id="page-header" class="flex flex-none items-center bg-white py-10" x-data="{ userDropdownOpen: false, mobileNavOpen: false }">
+  <header
+    id="page-header"
+    class="flex flex-none items-center bg-white py-10"
+    x-data="{ userDropdownOpen: false, mobileNavOpen: false }"
+  >
     <div
       class="flex flex-col text-center md:flex-row md:items-center md:justify-between space-y-6 md:space-y-0 container xl:max-w-7xl mx-auto px-4 lg:px-8"
     >
@@ -30,30 +34,34 @@
         class="flex flex-col text-center md:flex-row md:items-center md:justify-between space-y-6 md:space-y-0 md:space-x-10"
       >
         <nav class="space-x-4 md:space-x-6">
-          <a
-            href="javascript:void(0)"
+          <NuxtLink
+            to="/features"
+            tag="a"
             class="font-semibold text-gray-900 hover:text-gray-500"
           >
             <span>Features</span>
-          </a>
-          <a
-            href="javascript:void(0)"
+          </NuxtLink>
+          <NuxtLink
+            to="/plans"
+            tag="a"
             class="font-semibold text-gray-900 hover:text-gray-500"
           >
             <span>Plans</span>
-          </a>
-          <a
-            href="/blog/"
+          </NuxtLink>
+          <NuxtLink
+            to="/blog"
+            tag="a"
             class="font-semibold text-gray-900 hover:text-gray-500"
           >
             <span>Blog</span>
-          </a>
-          <a
-            href="javascript:void(0)"
+          </NuxtLink>
+          <NuxtLink
+            to="/about"
+            tag="a"
             class="font-semibold text-gray-900 hover:text-gray-500"
           >
             <span>About</span>
-          </a>
+          </NuxtLink>
         </nav>
         <!-- <div
           v-if="$auth.user"
@@ -123,7 +131,11 @@
           <!-- END Notifications -->
 
           <!-- User Dropdown -->
-          <div v-if="$auth.user" id="dropdown-menu" class="relative inline-block">
+          <div
+            v-if="$auth.user"
+            id="dropdown-menu"
+            class="relative inline-block"
+          >
             <!-- Dropdown Toggle Button -->
             <button
               id="tk-dropdown-layouts-user"
@@ -165,7 +177,7 @@
               role="menu"
               aria-labelledby="tk-dropdown-layouts-user"
               class="absolute right-0 origin-top-right mt-2 w-48 shadow-xl rounded"
-              :class="{hidden: isHidden}"
+              :class="{ hidden: isHidden }"
             >
               <div
                 class="bg-white ring-1 ring-black ring-opacity-5 rounded divide-y divide-gray-100"
@@ -314,7 +326,7 @@
 export default {
   data () {
     return {
-      isHidden: true,
+      isHidden: true
     }
   },
   created () {
@@ -338,7 +350,7 @@ export default {
           this.isHidden = true
         }
       }
-    },
+    }
   }
 }
 </script>

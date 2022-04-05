@@ -28,7 +28,7 @@
       <!-- END Heading -->
 
       <!-- Blog Posts -->
-      <Articles :articles="articles" />
+      <Articles v-if="articles" :articles="articles" />
       <!-- END Blog Posts -->
     </div>
   </div>

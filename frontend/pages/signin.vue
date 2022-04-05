@@ -125,14 +125,14 @@
               Don’t have an account yet?
               <a
                 class="font-medium text-indigo-600 hover:text-indigo-400"
-                href="javascript:void(0)"
+                href="/signup"
               >Join us today</a>
             </div>
           </div>
           <!-- END Sign In Form -->
 
           <!-- Footer -->
-          <div class="text-sm text-gray-500 text-center mt-6">
+          <!-- <div class="text-sm text-gray-500 text-center mt-6">
             <a
               class="font-medium text-indigo-600 hover:text-indigo-400"
               href="https://tailkit.com"
@@ -144,7 +144,7 @@
               href="https://pixelcave.com"
               target="_blank"
             >pixelcave</a>
-          </div>
+          </div> -->
           <!-- END Footer -->
         </div>
         <!-- END Sign In Section -->

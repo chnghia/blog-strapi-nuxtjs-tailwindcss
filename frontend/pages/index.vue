@@ -1,6 +1,6 @@
 <template>
   <!-- Page Content -->
-  <main id="page-content" class="flex flex-auto flex-col max-w-full">
+  <main v-if="homepage" id="page-content" class="flex flex-auto flex-col max-w-full">
     <!-- Hero -->
     <div class="bg-white overflow-hidden">
       <!-- Hero Content -->
@@ -15,13 +15,12 @@
               New dashboard is live!
             </div>
             <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
-              Premium leads for all your SaaS projects
+              {{ homepage.data.attributes.heroTitle }}
             </h2>
             <h3
               class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600"
             >
-              Focus on building your amazing service and we will do the rest. We
-              grew more than 10,000 online businesses.
+              {{ homepage.data.attributes.heroContent }}
             </h3>
             <div
               class="flex flex-col sm:flex-row sm:items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-2 pt-10 pb-16"
@@ -333,16 +332,22 @@
 <script>
 import allCategories from '~/apollo/queries/allCategories'
 import allArticles from '~/apollo/queries/allArticles'
+import getHomepage from '~/apollo/queries/getHomepage'
+
 export default {
   apollo: {
     categories: {
       prefetch: true,
-      query: allCategories
+      query: allCategories,
     },
     articles: {
       prefetch: true,
-      query: allArticles
-    }
+      query: allArticles,
+    },
+    homepage: {
+      prefetch: true,
+      query: getHomepage,
+    },
   }
 }
 </script>

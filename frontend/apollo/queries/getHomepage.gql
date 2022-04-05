@@ -1,0 +1,10 @@
+query getHomepage {
+  homepage {
+    data {
+      attributes {
+        heroTitle
+        heroContent
+      }
+    }
+  }
+}
