@@ -30,18 +30,7 @@
                 class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-indigo-700 bg-indigo-700 text-white hover:text-white hover:bg-indigo-800 hover:border-indigo-800 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-700 active:border-indigo-700"
               >
                 <span>Join us today</span>
-                <svg
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="opacity-50 hi-solid hi-arrow-right inline-block w-5 h-5"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+                <SvgArrowRight />
               </a>
               <a
                 href="javascript:void(0)"
@@ -285,18 +274,7 @@
                   href="javascript:void(0)"
                   class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-indigo-700 bg-indigo-700 text-white hover:text-white hover:bg-indigo-800 hover:border-indigo-800 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-700 active:border-indigo-700"
                 >
-                  <svg
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="opacity-50 hi-solid hi-arrow-right inline-block w-5 h-5"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                  <SvgArrowRight />
                   <span>Get Started</span>
                 </a>
                 <a
