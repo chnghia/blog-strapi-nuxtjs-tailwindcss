@@ -12,6 +12,11 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
+    script: [
+      {
+        src: '//unpkg.com/alpinejs', defer: true
+      }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
@@ -59,12 +64,16 @@ export default {
     strapiBaseUri: process.env.STRAPI_URL || 'http://localhost:1337'
   },
 
-  // strapi: {
-  //   url: process.env.STRAPI_URL || 'http://localhost:1337',
-  //   prefix: '/api',
-  //   version: 'v4',
-  //   cookie: {}
-  // },
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: 'tailwind.config.js',
+    exposeConfig: false,
+    config: {
+      plugins: []
+    },
+    injectPosition: 0,
+    viewer: true,
+  },
 
   auth: {
     strategies: {
